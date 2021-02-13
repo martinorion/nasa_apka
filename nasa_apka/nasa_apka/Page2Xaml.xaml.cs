@@ -21,5 +21,20 @@ namespace nasa_apka
         {
             await Navigation.PopAsync();
         }
+
+        async void OnNextPageButtonClickedA(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page4Xaml());
+        }
+
+        async void OnNextPageButtonClickedB(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page5Xaml());
+        }
+
+        async void OnNextPageButtonClickedC(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page6Xaml());
+        }
     }
 }

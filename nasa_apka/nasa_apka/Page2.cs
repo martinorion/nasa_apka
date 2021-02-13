@@ -11,18 +11,31 @@ namespace nasa_apka
 	{
 		public Page2()
 		{
-			var nextPageButton = new Button { Text = "Next Page", VerticalOptions = LayoutOptions.CenterAndExpand };
+			var nextPageButton = new Button { Text = "Bolesť hlavy", VerticalOptions = LayoutOptions.CenterAndExpand };
 			nextPageButton.Clicked += OnNextPageButtonClicked;
 
 			var previousPageButton = new Button { Text = "Previous Page", VerticalOptions = LayoutOptions.CenterAndExpand };
 			previousPageButton.Clicked += OnPreviousPageButtonClicked;
 
-			Title = "Page 2";
+			var nextPageButtonA = new Button { Text = "Bolesť brucha", VerticalOptions = LayoutOptions.CenterAndExpand };
+			nextPageButtonA.Clicked += OnNextPageButtonClicked;
+			
+			var nextPageButtonB = new Button { Text = "Vypadávanie vlasov", VerticalOptions = LayoutOptions.CenterAndExpand };
+			nextPageButtonB.Clicked += OnNextPageButtonClicked;
+			
+			var nextPageButtonC = new Button { Text = "Bolesť hrdla", VerticalOptions = LayoutOptions.CenterAndExpand };
+			nextPageButtonC.Clicked += OnNextPageButtonClicked;
+
+
+			Title = "Príznaky";
 			Content = new StackLayout
 			{
 				Children = {
 					nextPageButton,
-					previousPageButton
+					previousPageButton,
+					nextPageButtonA,
+					nextPageButtonB,
+					nextPageButtonC
 				}
 			};
 		}
@@ -35,6 +48,20 @@ namespace nasa_apka
 		async void OnPreviousPageButtonClicked(object sender, EventArgs e)
 		{
 			await Navigation.PopAsync();
+		}
+		async void OnNextPageButtonClickedA(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Page4Xaml());
+		}
+
+		async void OnNextPageButtonClickedB(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Page5Xaml());
+		}
+
+		async void OnNextPageButtonClickedC(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Page6Xaml());
 		}
 	}
 }

@@ -8,10 +8,10 @@ namespace nasa_apka
     {
 		public Page1()
 		{
-			var nextPageButton = new Button { Text = "Next Page", VerticalOptions = LayoutOptions.CenterAndExpand };
+			var nextPageButton = new Button { Text = "Súhlasím", VerticalOptions = LayoutOptions.CenterAndExpand };
 		nextPageButton.Clicked += OnNextPageButtonClicked;
 
-			Title = "Page 1";
+			Title = "Úvod";
 			Content = new StackLayout
 			{
 				Children = {
