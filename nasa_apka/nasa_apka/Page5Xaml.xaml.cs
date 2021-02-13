@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace nasa_apka
 {
     
-    public partial class Page4Xaml : ContentPage
+    public partial class Page5Xaml : ContentPage
     {
-        public Page4Xaml()
+        public Page5Xaml()
         {
             InitializeComponent();
         }

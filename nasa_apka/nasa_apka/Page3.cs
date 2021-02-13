@@ -11,14 +11,14 @@ namespace nasa_apka
     {
         public Page3()
 		{
-			var previousPageButton = new Button { Text = "Previous Page", VerticalOptions = LayoutOptions.CenterAndExpand };
+			var previousPageButton = new Button { Text = "Predchádzajúca strana", VerticalOptions = LayoutOptions.CenterAndExpand };
 			previousPageButton.Clicked += OnPreviousPageButtonClicked;
 
-			var rootPageButton = new Button { Text = "Return to Root Page", VerticalOptions = LayoutOptions.CenterAndExpand };
+			var rootPageButton = new Button { Text = "Hlavná strana", VerticalOptions = LayoutOptions.CenterAndExpand };
 			rootPageButton.Clicked += OnRootPageButtonClicked;
 
 		
-			Title = "Page 3";
+			Title = "Lieky";
 			Content = new StackLayout
 			{
 				Children = {

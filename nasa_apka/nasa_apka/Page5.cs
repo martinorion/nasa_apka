@@ -7,9 +7,9 @@ using Xamarin.Forms;
 
 namespace nasa_apka
 {
-    public class Page4 : ContentPage
+    public class Page5 : ContentPage
     {
-        public Page4()
+        public Page5()
 		{
 			var previousPageButton = new Button { Text = "Predchádzajúca strana", VerticalOptions = LayoutOptions.CenterAndExpand };
 			previousPageButton.Clicked += OnPreviousPageButtonClicked;
